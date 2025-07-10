@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Barang | Inventaris Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page">
+  <header>
+    <h1>Inventaris Lab</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="barang.html" class="active">Data Barang</a>
+      <a href="transaksi.html">Transaksi</a>
+      <a href="riwayat.html">Riwayat</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Tambah Barang</h2>
+     <form id="formBarang" class="form-grid">
+         <input type="text" id="nama" placeholder="Nama Barang" required />
+         <input type="text" id="kode" placeholder="Kode Unik" required />
+         <input type="number" id="jumlah" placeholder="Jumlah" required />
+         <input type="text" id="kategori" placeholder="Kategori" required />
+         <button type="submit">Simpan</button>
+</form>
+
+      <div id="formNotif" class="notif"></div>
+    </section>
+
+    <section class="card">
+      <h2>Daftar Barang</h2>
+        <table id="tabelBarang">
+          <thead>
+            <tr>
+            <th>Nama</th>
+            <th>Kode</th>
+            <th>Jumlah</th>
+            <th>Kategori</th>
+            <th>Aksi</th>
+            </tr>
+           </thead>
+         <tbody></tbody>
+        </table>
+
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/barang.js"></script>
+</body>
+</html>

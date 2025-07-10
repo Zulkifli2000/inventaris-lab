@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peminjaman | Inventaris Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page">
+  <header>
+    <h1>Inventaris Lab</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="barang.html">Data Barang</a>
+      <a href="peminjaman.html" class="active">Peminjaman</a>
+      <a href="riwayat.html">Riwayat</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Formulir Peminjaman Barang</h2>
+      <form id="formPeminjaman" class="form-grid">
+        <input type="text" id="nama_barang" placeholder="Nama Barang" required />
+        <input type="number" id="jumlah" placeholder="Jumlah" required />
+        <input type="text" id="peminjam" placeholder="Nama Peminjam" required />
+        <input type="date" id="tanggal_pinjam" required />
+        <input type="date" id="tanggal_kembali" required />
+        <button type="submit">Simpan Peminjaman</button>
+      </form>
+      <div id="peminjamanNotif" class="notif"></div>
+    </section>
+
+    <section class="card">
+      <h2>Riwayat Peminjaman</h2>
+      <table id="tabelPeminjaman">
+        <thead>
+          <tr>
+            <th>Nama Barang</th>
+            <th>Jumlah</th>
+            <th>Peminjam</th>
+            <th>Tgl Pinjam</th>
+            <th>Tgl Kembali</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/peminjaman.js"></script>
+</body>
+</html>

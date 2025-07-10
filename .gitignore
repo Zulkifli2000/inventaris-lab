@@ -1,0 +1,9 @@
+# Node.js
+node_modules/
+.env
+logs/
+*.log
+
+# Vercel & system
+.vercel/
+.DS_Store

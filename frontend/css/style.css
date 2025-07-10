@@ -1,0 +1,155 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5fef5;
+  color: #222;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+header {
+  background-color: #1a7f1a;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  background: white;
+  color: #1a7f1a;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #1a7f1a;
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Form grid */
+.form-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.form-grid input,
+.form-grid button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background: #1a7f1a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #146514;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* Notifikasi */
+.notif {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.success {
+  background: #e1f8e6;
+  color: #26753e;
+  border: 1px solid #b2e2bb;
+}
+
+.error {
+  background: #fbe1e1;
+  color: #9f2b2b;
+  border: 1px solid #f0aaaa;
+}
+
+/* ✅ Media Query untuk Mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e9f5e9;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+}
