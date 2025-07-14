@@ -21,6 +21,11 @@ app.use('/transaksi', transaksiRoutes);
 app.use('/riwayat', riwayatRoutes);
 app.use('/peminjaman', peminjamanRoutes);
 
+// ✅ Route default
+app.get('/', (req, res) => {
+  res.send('🚀 Backend Inventaris Lab berjalan dengan sukses!');
+});
+
 // Koneksi ke MongoDB
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
