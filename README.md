@@ -27,16 +27,6 @@ Sistem ini adalah aplikasi berbasis web yang dirancang untuk mengelola inventari
 - Frontend: [https://inventaris-lab.vercel.app]
 - Backend API: [https://a23574fb-af99-48a5-8d7b-97a78c64d5d5-00-em7l7qe775ni.pike.replit.dev/]
 
-## 📁 Struktur Folder
-
-inventaris-lab/
-├── backend/ # Kode backend (Express, MongoDB)
-├── frontend/ # Kode frontend (HTML/CSS/JS)
-├── .gitignore
-├── README.md
-└── vercel.json
-
-
 ## ⚙️ Cara Menjalankan Secara Lokal
 
 ### 1. Clone Repo
@@ -46,13 +36,13 @@ cd inventaris-lab
 
 ### 2. Setup Backend
 
-cd backend
-npm install
+cd backend  
+npm install  
 node server.js
 
-Pastikan sudah membuat file .env dengan isi:
+Pastikan sudah membuat file .env dengan isi:  
 
-MONGO_URI=your_mongodb_uri
+MONGO_URI=your_mongodb_uri  
 JWT_SECRET=your_jwt_secret
 
 ### 3. Jalankan Frontend 
@@ -62,10 +52,10 @@ Cukup buka frontend/index.html di browser, atau deploy via Vercel.
 ## 📸 Tampilan Antarmuka
 
 Berikut beberapa tampilan aplikasi:
--Halaman login admin
--Dashboard data barang
--Form peminjaman
--Riwayat transaksi
+- Halaman login admin
+- Dashboard data barang
+- Form peminjaman
+- Riwayat transaksi
 
 ## 🙌 Kontribusi & Lisensi
 Project ini dikembangkan oleh Zulkifli2000.
